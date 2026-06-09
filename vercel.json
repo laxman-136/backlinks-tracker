@@ -1,0 +1,24 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/gsc-sync",
+      "schedule": "30 20 * * *"
+    },
+    {
+      "path": "/api/cron/serp-check",
+      "schedule": "0 21 * * *"
+    },
+    {
+      "path": "/api/cron/ml-analysis",
+      "schedule": "30 21 * * *"
+    },
+    {
+      "path": "/api/cron/monthly-plan",
+      "schedule": "0 22 1 * *"
+    },
+    {
+      "path": "/api/cron/archive",
+      "schedule": "30 17 * * *"
+    }
+  ]
+}
