@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
-import { verifyToken } from './lib/auth';
+import { verifyTokenEdge } from './lib/auth-edge';
 
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
@@ -19,7 +19,7 @@ export async function middleware(request: NextRequest) {
 
   // Get token from cookie
   const token = request.cookies.get('seo_auth')?.value;
-  const payload = token ? verifyToken(token) : null;
+  const payload = token ? await verifyTokenEdge(token) : null;
 
   // 1. If not logged in and path is NOT public, redirect to /login
   if (!payload && !isPublicPath) {

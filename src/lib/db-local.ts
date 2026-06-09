@@ -152,7 +152,7 @@ export async function localQuery(text: string, params: any[] = []): Promise<{ ro
   // 1. SELECT * FROM members WHERE username = $1
   if (lowerSql.startsWith('select') && cleanSql.includes('members') && lowerSql.includes('username =')) {
     const rows = readTable('members');
-    const filtered = rows.filter(r => r.username === params[0]);
+    const filtered = rows.filter(r => r.username.toLowerCase() === params[0].toLowerCase());
     return { rows: filtered, rowCount: filtered.length };
   }
 
