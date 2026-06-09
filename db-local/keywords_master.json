@@ -1,0 +1,52 @@
+[
+  {
+    "id": "k1",
+    "keyword": "Oracle Fusion Technical Training",
+    "keyword_group": "Fusion Technical",
+    "property": "TLI",
+    "target_url": "https://www.techleadsit.com/oracle-fusion-technical-training",
+    "priority": "High",
+    "status": "Active",
+    "added_date": "2026-06-09"
+  },
+  {
+    "id": "k2",
+    "keyword": "Oracle Fusion SCM Training",
+    "keyword_group": "Fusion SCM",
+    "property": "TLI",
+    "target_url": "https://www.techleadsit.com/oracle-fusion-scm-training",
+    "priority": "High",
+    "status": "Active",
+    "added_date": "2026-06-09"
+  },
+  {
+    "id": "k3",
+    "keyword": "Oracle Fusion HCM Online Course",
+    "keyword_group": "Fusion HCM",
+    "property": "TLI",
+    "target_url": "https://www.techleadsit.com/oracle-fusion-hcm-training",
+    "priority": "Medium",
+    "status": "Active",
+    "added_date": "2026-06-09"
+  },
+  {
+    "id": "k4",
+    "keyword": "Oracle Fusion Financials Training",
+    "keyword_group": "Fusion Financials",
+    "property": "SOT",
+    "target_url": "https://www.softonlinetraining.com/oracle-fusion-financials-training",
+    "priority": "Medium",
+    "status": "Active",
+    "added_date": "2026-06-09"
+  },
+  {
+    "id": "k5",
+    "keyword": "Best Oracle SCM Online Training",
+    "keyword_group": "Fusion SCM",
+    "property": "SOT",
+    "target_url": "https://www.softonlinetraining.com/oracle-fusion-scm-training",
+    "priority": "High",
+    "status": "Active",
+    "added_date": "2026-06-09"
+  }
+]

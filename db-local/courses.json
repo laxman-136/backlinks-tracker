@@ -1,0 +1,38 @@
+[
+  {
+    "id": "co1",
+    "course_name": "Oracle Fusion Technical Training",
+    "keyword_group": "Fusion Technical",
+    "property": "Both",
+    "priority": "High",
+    "status": "Active",
+    "created_at": "2026-06-09T14:00:55.058Z"
+  },
+  {
+    "id": "co2",
+    "course_name": "Oracle Fusion SCM Training",
+    "keyword_group": "Fusion SCM",
+    "property": "Both",
+    "priority": "High",
+    "status": "Active",
+    "created_at": "2026-06-09T14:00:55.058Z"
+  },
+  {
+    "id": "co3",
+    "course_name": "Oracle Fusion HCM Training",
+    "keyword_group": "Fusion HCM",
+    "property": "Both",
+    "priority": "Medium",
+    "status": "Active",
+    "created_at": "2026-06-09T14:00:55.058Z"
+  },
+  {
+    "id": "co4",
+    "course_name": "Oracle Fusion Financials Training",
+    "keyword_group": "Fusion Financials",
+    "property": "Both",
+    "priority": "Medium",
+    "status": "Active",
+    "created_at": "2026-06-09T14:00:55.058Z"
+  }
+]

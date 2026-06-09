@@ -1,0 +1,29 @@
+[
+  {
+    "id": "c1",
+    "domain": "cloudshine.com",
+    "display_name": "Cloudshine",
+    "threat_level": "High",
+    "tracked_since": "2026-06-09",
+    "status": "Active",
+    "notes": ""
+  },
+  {
+    "id": "c2",
+    "domain": "growmore.com",
+    "display_name": "GrowMore Technologies",
+    "threat_level": "Medium",
+    "tracked_since": "2026-06-09",
+    "status": "Active",
+    "notes": ""
+  },
+  {
+    "id": "c3",
+    "domain": "erptree.com",
+    "display_name": "Erptree Job Guarantee",
+    "threat_level": "Medium",
+    "tracked_since": "2026-06-09",
+    "status": "Active",
+    "notes": ""
+  }
+]

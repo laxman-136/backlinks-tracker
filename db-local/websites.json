@@ -1,0 +1,18 @@
+[
+  {
+    "id": "w1",
+    "code": "TLI",
+    "domain": "techleadsit.com",
+    "property_url": "https://www.techleadsit.com",
+    "status": "Active",
+    "created_at": "2026-06-09T14:00:55.053Z"
+  },
+  {
+    "id": "w2",
+    "code": "SOT",
+    "domain": "softonlinetraining.com",
+    "property_url": "https://www.softonlinetraining.com",
+    "status": "Active",
+    "created_at": "2026-06-09T14:00:55.053Z"
+  }
+]
