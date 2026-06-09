@@ -191,7 +191,7 @@ export async function localQuery(text: string, params: any[] = []): Promise<{ ro
     return { rows: [newMember], rowCount: 1 };
   }
 
-  // 5. UPDATE members SET password_hash = $1, must_change_password = $2 WHERE id = $3
+  // 5. UPDATE members
   if (lowerSql.startsWith('update members')) {
     const rows = readTable('members');
     if (lowerSql.includes('password_hash =') && lowerSql.includes('must_change_password =')) {
@@ -202,19 +202,26 @@ export async function localQuery(text: string, params: any[] = []): Promise<{ ro
         writeTable('members', rows);
         return { rows: [rows[idx]], rowCount: 1 };
       }
-    }
-    // general member update
-    const idParam = params[params.length - 1];
-    const idx = rows.findIndex(r => r.id === idParam);
-    if (idx !== -1) {
-      rows[idx].name = params[0];
-      rows[idx].role = params[1];
-      rows[idx].job_role = params[2];
-      rows[idx].assigned_courses = params[3];
-      rows[idx].assigned_property = params[4];
-      rows[idx].status = params[5];
-      writeTable('members', rows);
-      return { rows: [rows[idx]], rowCount: 1 };
+    } else if (lowerSql.includes('last_login =')) {
+      const idx = rows.findIndex(r => r.id === params[0]);
+      if (idx !== -1) {
+        rows[idx].last_login = new Date().toISOString();
+        writeTable('members', rows);
+        return { rows: [rows[idx]], rowCount: 1 };
+      }
+    } else if (lowerSql.includes('name =') && lowerSql.includes('role =')) {
+      const idParam = params[params.length - 1];
+      const idx = rows.findIndex(r => r.id === idParam);
+      if (idx !== -1) {
+        rows[idx].name = params[0];
+        rows[idx].role = params[1];
+        rows[idx].job_role = params[2];
+        rows[idx].assigned_courses = params[3];
+        rows[idx].assigned_property = params[4];
+        rows[idx].status = params[5];
+        writeTable('members', rows);
+        return { rows: [rows[idx]], rowCount: 1 };
+      }
     }
   }
 
